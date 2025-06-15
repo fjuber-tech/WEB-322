@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Solutions</title>
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar bg-base-100 px-6">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl" href="/">Climate Solutions</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/about">About</a></li>
+        <li>
+          <details>
+            <summary>Sector</summary>
+            <ul class="p-2 bg-base-100">
+              <li><a href="/solutions/projects?sector=Electricity">Electricity</a></li>
+              <li><a href="/solutions/projects?sector=Industry">Industry</a></li>
+              <li><a href="/solutions/projects?sector=Food">Food, Agriculture, and Land Use</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main container -->
+  <div class="container mx-auto">
+
+    <!-- Hero Section -->
+    <div class="hero bg-base-200 p-10 my-6 rounded-lg">
+      <div class="hero-content text-center">
+        <div class="max-w-xl">
+          <h1 class="text-4xl font-bold">Explore Climate Solutions</h1>
+          <p class="py-4">Discover innovative solutions to reduce greenhouse gases and help build a sustainable future.</p>
+          <a href="/solutions/projects" class="btn btn-primary">Explore Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Column Grid with Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img src="/images/farmland.jpg" alt="Abandoned Farmland Restoration" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Abandoned Farmland Restoration</h2>
+          <p>Restoration can bring degraded farmland back into productivity and sequester carbon in the process.</p>
+          <a href="/solutions/projects/1" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img src="/images/cement.jpg" alt="Alternative Cement" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Alternative Cement</h2>
+          <p>This solution reduces emissions from cement production by using alternative materials.</p>
+          <a href="/solutions/projects/2" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img src="/images/biomass.jpg" alt="Biomass Power" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Biomass Power</h2>
+          <p>Perennial biomass crops offer a carbon-neutral alternative to fossil fuels for energy generation.</p>
+          <a href="/solutions/projects/3" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
