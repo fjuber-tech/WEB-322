@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About</title>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <%- include("partials/navbar", { page: "/about" }) %>
+
+    <div class="container mx-auto">
+        <div class="hero bg-base-200 py-10 text-center">
+            <div class="hero-content flex-col">
+                <h1 class="text-5xl font-bold">All about me</h1>
+                <p class="py-4">A little bit about who I am, what I love, and where I'm going.</p>
+                <a href="/" class="btn btn-secondary">Return</a>
+            </div>
+        </div>
+
+        <!-- Responsive two-column layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-10 items-center">
+            <img src="/images/me.jpg" alt="About Me" class="w-full rounded-lg shadow-lg" />
+            <p class="text-lg leading-relaxed">
+                Hi. I'm Fairooz. I'm a Computer Science student passionate about coding, technology, and sustainability. 
+                I love working on web projects like this one and am currently learning JavaScript, Node.js, and full-stack development. 
+                When I'm not coding, I enjoy photography, hiking, and playing strategy games.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <%- include("partials/navbar", { page: "/" }) %>
+
+    <div class="container mx-auto">
+        <div class="hero bg-base-200 py-10 text-center">
+            <div class="hero-content flex-col">
+                <h1 class="text-5xl font-bold">Welcome</h1>
+                <p class="py-4">Browse our current collection of modern solutions to help fight Climate Change.</p>
+                <a href="/solutions/projects" class="btn btn-primary">Get Started Now</a>
+            </div>
+        </div>
+
+        <!-- 3 Project Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/farmland.jpg" alt="Farmland" class="w-full h-48 object-cover" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Abandoned Farmland Restoration</h2>
+                    <p>Restoration can bring degraded farmland back into productivity and sequester carbon in the process.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/cement.jpg" alt="Cement" class="w-full h-48 object-cover" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Alternative Cement</h2>
+                    <p>Reformulated cement reduces emissions by utilizing low-carbon binding agents and materials.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/biomass.jpg" alt="Biomass" class="w-full h-48 object-cover" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Biomass Energy</h2>
+                    <p>Biomass provides renewable energy from organic materials, reducing reliance on fossil fuels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
